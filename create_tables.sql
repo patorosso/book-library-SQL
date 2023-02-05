@@ -7,7 +7,6 @@ CREATE TABLE libro(
     titulo VARCHAR(20),
     id_autor INT,
     cant_paginas INT,
-    editorial VARCHAR(20),
     cant_disponible INT,
     PRIMARY KEY(id_libro));
     
@@ -39,11 +38,6 @@ CREATE TABLE autor(
 FOREIGN KEY(id_nacionalidad) REFERENCES nacionalidad(id_nacionalidad)
 	
 );
-
-
-
-
-
 
 
 
