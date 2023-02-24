@@ -57,7 +57,7 @@ CREATE TABLE clientes(
 	id_cliente INT,
     nombre VARCHAR(20),
     apellidos VARCHAR(20),
-    telefono INT,
+    telefono VARCHAR(30),
     cant_ejemplares INT,
     direccion VARCHAR(20),
     email VARCHAR(30),
