@@ -4,7 +4,7 @@ use library;
 
 CREATE TABLE libros(
 	id_libro INT,
-    titulo VARCHAR(20),
+    titulo VARCHAR(70),
     id_autor INT,
     cant_paginas INT,
     cant_disponible INT,

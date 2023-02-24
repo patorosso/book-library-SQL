@@ -1,0 +1,10 @@
+id_libro,titulo,id_autor,cant_paginas,cant_disponible,id_genero,id_editorial
+1,Sapiens: A Brief History of Humankind,1,443,10,9,1
+2,Lord of The Rings: The Fellowship of the Ring,2,423,20,1,2
+3,Dive Into Design Patterns,3,409,3,9,3
+4,Veinte mil leguas de viaje submarino,4,320,7,8,4
+5,Revolution in the Head: Beatles Records and the Sixties,5,544,23,10,5
+6,La vuelta al mundo en 80 dias,4,304,53,2,6
+7,Los diez libros de arquitectura,6,294,2,9,7
+8,Made to stick: why some ideas survive and others die,7,291,13,9,8
+
