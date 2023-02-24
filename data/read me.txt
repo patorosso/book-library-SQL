@@ -1,0 +1,6 @@
+
+Posible orden de inserción:
+
+ Primero tablas sin FK como Nacionalidades, Editoriales, Generos y Clientes.
+
+ Luego Autores, Libros y Ejemplares.
