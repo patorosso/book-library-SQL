@@ -33,4 +33,6 @@ RETURN less_available_book;
 END //
 DELIMITER ;
 
+/* example */ 
 SELECT get_less_available_book_by_author(4);
+/* example */
