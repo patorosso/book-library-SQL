@@ -22,25 +22,28 @@ end
 $$
 delimiter ;
 
-
 call `select de campo ordenado` ('titulo',''); /* 'desc' or '' */
+
+
+
+
+
 
 
 /* segundo procedure */
 
 
-drop procedure if exists `select de campo ordenado`;
+drop procedure if exists `eliminar un genero literario`;
 
 delimiter $$
-create procedure `select de campo ordenado`
+create procedure `eliminar un genero literario`
 (
 /*params*/
-in campo varchar(20),
-in orden varchar(4)
+in id int
 )
 begin
-/* query para ordenar por el campo, todo esto en la tabla libros */
-set @sentencia = concat ('select * from libros order by ',campo,' ',orden);
+/* borrar el genero segun id */
+set @sentencia = concat ('delete from generos where  id_genero = ',id);
 
 prepare dummy from @sentencia;
 execute dummy;
@@ -50,7 +53,7 @@ $$
 delimiter ;
 
 
-call `select de campo ordenado` ('titulo',''); /* 'desc' or '' */
+call `eliminar un genero literario` (4); 
 
 
 
