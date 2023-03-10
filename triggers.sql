@@ -66,7 +66,9 @@ for each row
 	 INSERT INTO log(fecha_actualizacion,tabla_act,operacion,usuario) VALUES (now(),'clientes','UPDATE',SYSTEM_USER());
 end$$
 
-
+/*example
+UPDATE clientes SET cant_ejemplares = 1 where id_cliente = 8;
+*/
 
 
 
