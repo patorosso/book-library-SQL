@@ -3,7 +3,7 @@ CREATE SCHEMA `library` ;
 use library;
 
 CREATE TABLE libros(
-	id_libro INT,
+	id_libro INT NOT NULL AUTO_INCREMENT,
     titulo VARCHAR(70),
     id_autor INT,
     cant_paginas INT,
@@ -11,26 +11,26 @@ CREATE TABLE libros(
     PRIMARY KEY(id_libro));
     
 CREATE TABLE generos(
-id_genero INT,
+id_genero INT NOT NULL AUTO_INCREMENT,
 descripcion VARCHAR(20),
 	
     PRIMARY KEY(id_genero));
     
 CREATE TABLE editoriales(
-id_editorial INT,
+id_editorial INT NOT NULL AUTO_INCREMENT,
 descripcion VARCHAR(20),
 	
     PRIMARY KEY(id_editorial));
 
 CREATE TABLE nacionalidades(
-	id_nacionalidad INT,
+	id_nacionalidad INT NOT NULL AUTO_INCREMENT,
     descripcion VARCHAR(20),
     
     PRIMARY KEY(id_nacionalidad));
 
 
 CREATE TABLE autores(
-	id_autor INT,
+	id_autor INT NOT NULL AUTO_INCREMENT,
     nombre VARCHAR(20),
     apellidos VARCHAR(20),
     id_nacionalidad INT,
@@ -54,7 +54,7 @@ ADD CONSTRAINT `FK_GENEROS` FOREIGN KEY (id_genero) references generos(id_genero
 
 
 CREATE TABLE clientes(
-	id_cliente INT,
+	id_cliente INT NOT NULL AUTO_INCREMENT,
     nombre VARCHAR(20),
     apellidos VARCHAR(20),
     telefono VARCHAR(30),
@@ -66,7 +66,7 @@ CREATE TABLE clientes(
 
 
 CREATE TABLE ejemplares(
-	id_ejemplar INT,
+	id_ejemplar INT NOT NULL AUTO_INCREMENT,
     id_libro INT,
     fecha_tomado DATE,
 	id_cliente INT,
